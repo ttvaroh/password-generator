@@ -10,27 +10,27 @@
         </div>
         <div class="gen-options">
             <button id="gen-btn">Generate new passwords</button>
-            <button id="toggle-options" class="toggle-btn">Show Options ▼</button>
+            <button id="toggle-options" class="toggle-btn">Show Options</button>
             <div id="options-panel" class="hidden">
                 <div class="option-group">
                     <label for="password-length">Length: <span id="length-display">12</span></label>
                     <input type="range" id="password-length" min="8" max="20" value="12" />
                 </div>
                 
-                <div class="option-group">
-                    <label>Include Uppercase<input type="checkbox" id="include-uppercase" checked /></label>
-                    <label>Include Numbers<input type="checkbox" id="include-numbers" checked /></label>
-                    <label>Include Symbols<input type="checkbox" id="include-symbols" checked /></label>
+                <div class="option-group checkbox-wrapper">
+                    <label>Include Uppercase<input class="modern-checkbox" type="checkbox" id="include-uppercase" checked /></label>
+                    <label>Include Numbers<input class="modern-checkbox" type="checkbox" id="include-numbers" checked /></label>
+                    <label>Include Symbols<input class="modern-checkbox" type="checkbox" id="include-symbols" checked /></label>
                 </div>
             </div>
         </div>
-        <div class="line" />
+        <div class="line"></div>
         <div>
             <div class="res-container">
                 <button class="res-btn" id="password1"></button>
                 <button class="res-btn" id="password2"></button>
             </div>
         </div>
-        <script src="index.js"></script>
+        <script src="./index.js"></script>
     </body>
 </html>

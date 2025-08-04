@@ -78,6 +78,16 @@ h1 {
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
+.clicked {
+  animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
 
 .line {
     height: 2px;
@@ -105,93 +115,111 @@ h1 {
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
+
+
 .res-btn.copied {
     outline: 2px solid #B35D7A;
-    transition: outline 0.2s ease;
+    /* background-color: #6B4E5A;
+    color: #FCD6DF; */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: rgb(246, 114, 128);
+  background: -webkit-linear-gradient(
+    left,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#f67280",
+    endColorstr="#355c7d",
+    GradientType=1
+  );
+}
+
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: rgb(246, 114, 128);
+  background: -moz-linear-gradient(
+    left,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#f67280",
+    endColorstr="#355c7d",
+    GradientType=1
+  );
+}
+
+input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: rgb(246, 114, 128);
+  background: -moz-linear-gradient(
+    left,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(246, 114, 128, 1) 0%,
+    rgba(192, 108, 132, 1) 50%,
+    rgba(53, 92, 125, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#f67280",
+    endColorstr="#355c7d",
+    GradientType=1
+  );
+}
+
+input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+border: 2px solid #B35D7A;
+border-radius: 50%;
+height: 20px;
+width: 20px;
+position: relative;
+bottom: 8px;
+background-color: #2A1F2C;
+background-size: 50%;
+box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+cursor: pointer;
 }
 
 
-input[type="range"]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 3px;
-    background: rgb(246, 114, 128);
-    background: -webkit-linear-gradient(
-      left,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    background: linear-gradient(
-      to right,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#f67280",
-      endColorstr="#355c7d",
-      GradientType=1
-    );
-  }
-
-  input[type="range"]::-moz-range-track {
-    -moz-appearance: none;
-    appearance: none;
-    height: 3px;
-    background: rgb(246, 114, 128);
-    background: -moz-linear-gradient(
-      left,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    background: linear-gradient(
-      to right,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#f67280",
-      endColorstr="#355c7d",
-      GradientType=1
-    );
-  }
-  
-  input[type="range"]::-ms-track {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 3px;
-    background: rgb(246, 114, 128);
-    background: -moz-linear-gradient(
-      left,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    background: linear-gradient(
-      to right,
-      rgba(246, 114, 128, 1) 0%,
-      rgba(192, 108, 132, 1) 50%,
-      rgba(53, 92, 125, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#f67280",
-      endColorstr="#355c7d",
-      GradientType=1
-    );
-  }
-
-  input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
   appearance: none;
   border: 2px solid #B35D7A;
   border-radius: 50%;
@@ -199,40 +227,88 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 20px;
   position: relative;
   bottom: 8px;
-background-color: #2A1F2C;
+  background-color: #2A1F2C;
+  background-size: 50%;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #B35D7A;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 8px;
+  background-color: #2A1F2C;
   background-size: 50%;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
 
-  input[type="range"]::-moz-range-thumb {
-    -moz-appearance: none;
+  .checkbox-wrapper .modern-checkbox {
     appearance: none;
-    border: 2px solid #B35D7A;
-    border-radius: 50%;
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    border-style: none;
+    flex-shrink: 0;
     height: 20px;
-    width: 20px;
+    margin: 0;
     position: relative;
-    bottom: 8px;
-    background-color: #2A1F2C;
-    background-size: 50%;
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+    width: 30px;
   }
 
-  input[type="range"]::-ms-thumb {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 2px solid #B35D7A;
+  .checkbox-wrapper .modern-checkbox::before {
+    bottom: -6px;
+    content: "";
+    left: -6px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+  }
+
+  .checkbox-wrapper .modern-checkbox,
+  .checkbox-wrapper .modern-checkbox::after {
+    transition: all 100ms ease-out;
+  }
+
+  .checkbox-wrapper .modern-checkbox::after {
+    background-color: #fff;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    position: relative;
-    bottom: 8px;
-    background-color: #2A1F2C;
-    background-size: 50%;
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+    content: "";
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+  }
+
+  .checkbox-wrapper input[type=checkbox] {
+    cursor: default;
+  }
+
+  .checkbox-wrapper .modern-checkbox:hover {
+    background-color: #c9cbcd;
+    transition-duration: 0s;
+  }
+
+  .checkbox-wrapper .modern-checkbox:checked {
+    background-color: #6e79d6;
+  }
+
+  .checkbox-wrapper .modern-checkbox:checked::after {
+    background-color: #fff;
+    left: 13px;
+  }
+
+  .checkbox-wrapper :focus:not(.focus-visible) {
+    outline: 0;
+  }
+
+  .checkbox-wrapper .modern-checkbox:checked:hover {
+    background-color: #535db3;
   }
