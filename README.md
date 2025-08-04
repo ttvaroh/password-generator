@@ -1,19 +1,30 @@
-# Getting Started
-Install the dependencies and run the project
-```
+# 🔐 Random Password Generator
+
+Generate secure, customizable passwords with style. This project helps users create strong passwords using a clean, dark-themed interface with options for length, symbols, numbers, and uppercase letters.
+
+[![Click to open the app](./test-pic.png)](https://reliable-nasturtium-72cc13.netlify.app/)
+
+## 🚀 Live Demo
+👉 [Launch the app](https://reliable-nasturtium-72cc13.netlify.app/)
+
+## ✨ Features
+
+- 🎲 Generate two random passwords with a single click
+- 🎚️ Adjustable length (8–20 characters) using a slider
+- 🔠 Optional character types: uppercase, numbers, symbols
+- 📋 One-click copy-to-clipboard for each password
+- 🎨 Smooth animations and a responsive dark UI
+
+## 🛠️ Built With
+
+- [Vite](https://vitejs.dev/) – Fast dev + build tool
+- Vanilla JavaScript (ES Modules)
+- HTML & CSS
+
+## 🧪 How to Run Locally
+
+```bash
+git clone https://github.com/ttvaroh/password-generator.git
+cd password-generator
 npm install
-npm start
-```
-
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
-
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+npm run dev
